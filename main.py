@@ -4,7 +4,7 @@ import sqlite3 as sql
 db = sql.connect("pokemon.db")
 c = db.cursor()
 
-c.execute("SELECT * FROM Pokemon WHERE name like '%an%'")
+c.execute("SELECT * FROM Pokemon")
 results = c.fetchall()
 
 for line in results:
